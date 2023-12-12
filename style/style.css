@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "Paris2024";
+    src: url(Paris2024-Variable.ttf);
+}
+
+body {
+    background-color: #575294;
+    font-family: "Paris2024";
+}
+
+
+#menu .burger {
+    background: var(--heading);
+    border-radius: 50%;
+    cursor: pointer;
+    float: left;
+    height: 5rem;
+    position: relative;
+    width: 5rem;
+    z-index: 50;
+}
+button, input, select, textarea {
+    padding: 0;
+    line-height: inherit;
+    color: inherit;
+}
+button {
+    cursor: pointer;
+}
+button {
+    background-color: transparent;
+    background-image: none;
+}
+button, select {
+    text-transform: none;
+}
+button, input {
+    overflow: visible;
+}
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+button {
+    appearance: auto;
+    text-rendering: auto;
+    color: white;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: transparent;
+    writing-mode: horizontal-tb;
+    margin: 0em;
+    padding-block: 1px;
+    padding-inline: 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
