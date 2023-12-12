@@ -5,12 +5,16 @@
 
 body {
     background-color: #575294;
+    color: white;
     font-family: "Paris2024";
+    display: flex;
 }
 
+.is-sticky {
+    position: sticky;
+}
 
 #menu .burger {
-    background: var(--heading);
     border-radius: 50%;
     cursor: pointer;
     float: left;
@@ -19,31 +23,27 @@ body {
     width: 5rem;
     z-index: 50;
 }
-button, input, select, textarea {
+
+#menu .labmenu {
+    margin-top: 2em;
+    padding-top: 2em;
+    position: relative;
+    font-size: 40px;
+}
+
+button {
     padding: 0;
     line-height: inherit;
     color: inherit;
-}
-button {
     cursor: pointer;
-}
-button {
     background-color: transparent;
     background-image: none;
-}
-button, select {
     text-transform: none;
-}
-button, input {
     overflow: visible;
-}
-button, input, select, textarea {
     font-family: inherit;
     font-size: 100%;
     line-height: 1.15;
     margin: 0;
-}
-button {
     appearance: auto;
     text-rendering: auto;
     color: white;
@@ -58,13 +58,36 @@ button {
     align-items: flex-start;
     cursor: default;
     box-sizing: border-box;
-    background-color: transparent;
+    background-color: white;
     writing-mode: horizontal-tb;
-    margin: 0em;
+    margin: 1em;
     padding-block: 1px;
     padding-inline: 6px;
     border-width: 2px;
     border-style: outset;
-    border-color: buttonborder;
-    border-image: initial;
+    border-color: rgba(255, 255, 255, 0.699);
+}
+
+.firstline {
+    border: solid 1px;
+    border-color: black;
+    display: list-item;
+    list-style: none;
+    margin: 10px;
+}
+
+.secline {
+    border: solid 1px;
+    border-color: black;
+    display: list-item;
+    list-style: none;
+    margin: 10px;
+}
+
+.thiline {
+    border: solid 1px;
+    border-color: black;
+    display: list-item;
+    list-style: none;
+    margin: 10px;
 }
