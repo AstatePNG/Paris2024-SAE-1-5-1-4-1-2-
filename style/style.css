@@ -10,84 +10,174 @@ body {
     display: flex;
 }
 
-.is-sticky {
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#burger {
     position: sticky;
 }
 
-#menu .burger {
-    border-radius: 50%;
-    cursor: pointer;
-    float: left;
-    height: 5rem;
-    position: relative;
-    width: 5rem;
-    z-index: 50;
-}
-
-#menu .labmenu {
-    margin-top: 2em;
-    padding-top: 2em;
-    position: relative;
-    font-size: 40px;
-}
-
 button {
+    height: 5em;
+    position: relative;
+    overflow: hidden;
+    width: 5em;
+    z-index: 50;
     padding: 0;
-    line-height: inherit;
-    color: inherit;
     cursor: pointer;
-    background-color: transparent;
-    background-image: none;
-    text-transform: none;
-    overflow: visible;
-    font-family: inherit;
+    border-radius: 50%;
+    border: solid 1px;
     font-size: 100%;
     line-height: 1.15;
-    margin: 0;
-    appearance: auto;
-    text-rendering: auto;
     color: white;
-    letter-spacing: normal;
-    word-spacing: normal;
-    line-height: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: center;
-    align-items: flex-start;
-    cursor: default;
-    box-sizing: border-box;
-    background-color: white;
-    writing-mode: horizontal-tb;
+    margin-block-start: 2em;
     margin: 1em;
+    padding: 1em;
     padding-block: 1px;
     padding-inline: 6px;
     border-width: 2px;
-    border-style: outset;
     border-color: rgba(255, 255, 255, 0.699);
+    line-height:30px;
 }
 
-.firstline {
+button:hover>#burger>span{
+    margin: 12px;
+}
+
+.labmenu {
+    position: relative;
+    font-size: 40px;
+    z-index: 100;
+}
+
+#burger>span{
     border: solid 1px;
     border-color: black;
     display: list-item;
     list-style: none;
     margin: 10px;
+    transition: 0.10s;
 }
 
-.secline {
-    border: solid 1px;
-    border-color: black;
-    display: list-item;
-    list-style: none;
-    margin: 10px;
+#burger.open>span:nth-child(2) {
+    opacity: 0;
 }
 
-.thiline {
+#burger.open>span:first-child {
+    transform: rotate(45deg);
+    margin: 10px 10px -12px;
+    transition: 0.3s;
+}
+
+#burger.open>span:last-child {
+    transform: rotate(-45deg);
+    margin: -12px 10px 10px;
+    transition: 0.3s;
+}
+
+#menu-list {
+    display: block;
+    background-color: #0d0b27a8;
+    list-style: none;
+    font-size: 40px;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: -150%;
+    transition: .5s;
+    line-height: 1.15;
+    padding: 5em 2em 1em;
+    margin: 0;
+    height: 100vh;
+}
+
+#menu-list>li {
+    margin-top: 1em;
+}
+
+#menu-list>span {
     border: solid 1px;
-    border-color: black;
+    border-color: white;
     display: list-item;
     list-style: none;
-    margin: 10px;
+    margin-top: 1em;
+}
+
+#menu-list>li:last-child {
+    font-size: 20px;
+}
+
+#menu-list.displayed {
+    left: 0%;
+    right: 0px;
+    opacity: 100%;
+}
+
+p{
+	text-align : center;
+	color : white;
+	font-size : 250%;
+}
+
+.bloc{
+	flex-direction: column;
+	margin-bottom: 30px;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 150px;
+	width: 55%;
+	font-size: 40px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	text-align: center;
+	border-radius : 1em;
+	background-color: #5ac2f2;
+	color : black; 
+}
+
+.bloc2{
+	flex-direction: column;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 50px;
+	width: 25%;
+	font-size: 27px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	text-align: center;
+	color : black; 
+	background-color: white;
+}
+.bloc3{
+	flex-direction: column;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	margin-left: 30%;
+	height: 50px;
+	width: 40%;
+	font-size: 40px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	text-align: center;
+	color : white; 
+
+}
+
+.bloc:hover{
+    background-color: #46b5e8;
+}
+
+.bloc:active {
+    box-shadow:
+      inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+      inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }

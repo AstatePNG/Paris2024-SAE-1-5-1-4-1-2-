@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Connexion</title>
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+        <header>
+            <nav id="menu" href="#" class="">
+                <button onclick="showMenu()" class="">
+                    <span id="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+                <label class="labmenu">Menu</label>
+                <ul id="menu-list" class="">
+                    <li><a>Accueil</a></li>
+                    <li><a>Notre rôle</a></li>
+                    <span></span>
+                    <li><a>Remplir le questionnaire</a></li>
+                    <li><a>Se recenser</a></li>
+                    <li><a>Les déplacements près de chez moi</a></li>
+                    <span></span>
+                    <li><a>Création de tableaux de bord</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="menu" class="is-sticky"> 
+            <button class="burger" aria-label="Ouvrir le menu"> 
+                <span aria-hidden="true"></span> 
+                <span aria-hidden="true"></span> 
+                <span aria-hidden="true"></span> 
+            </button> 
+            <label class=""> 
+                <span>Menu</span> 
+            </label>
+        </div>
+		<div class = "bloc3"> Vous voulez répondre à un questionnaire en tant que : </div>
+		<div class = "bloc"> Votre compte administrateur <input type = "text" placeholder = "Entrez votre compte"> </div>
+		<div class = "bloc"> Votre mot de passe <input type = "password" placeholder = "Votre mot de passe"> </div>
+		<div class = "bloc2"> Se connecter </div>
+        <script src="scripts/script.js"></script>
+    </body>
+</html>
