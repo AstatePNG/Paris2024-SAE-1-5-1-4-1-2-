@@ -13,3 +13,5 @@ function showMenu() {
         list.classList.add("displayed");
     }
 }
+
+/*Javascript utilisé pour le menu, réalisé par Elsa Hamon*/
