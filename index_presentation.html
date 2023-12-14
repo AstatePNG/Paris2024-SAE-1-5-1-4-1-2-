@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Présentation</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+        <header>
+        	<header>
+                <nav id="menu" class="">
+                    <button onclick="showMenu()" class="">
+                        <span id="burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </button>
+                    <label class="labmenu">Menu</label>
+                    <ul id="menu-list" class="offcanvas-body">
+                        <li class="list-group-item"><a href="index.html">Accueil <span>→</span></a></li>
+                        <li class="list-group-item">
+                            <button button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                Notre rôle <span>☰</span>
+                            </button>
+                            <div class="collapse" id="collapseExample">
+                                <div class="card card-body">
+                                    <ul>
+                                        <li class="dropdown-item"><a href="#">Lorem Ipsum <span>→</span></a></li>
+                                        <li class="dropdown-item"><a href="#">Lorem Ipsum <span>→</span></a></li>
+                                        <li class="dropdown-item"><a href="#">Lorem Ipsum <span>→</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item"><span></span></li>
+                        <li class="list-group-item"><a href="questionnaire.html">Remplir le questionnaire <span>→</span></a></li>
+                        <li class="list-group-item"><a href="#">Se recenser <span>→</span></a></li>
+                        <li class="list-group-item"><a href="#">Les déplacements près de chez moi <span>→</span></a></li>
+                        <li class="list-group-item"><span></span></li>
+                        <li class="list-group-item"><a href="co_admin.html">Création de tableaux de bord <span>→</span></a></li>
+                    </ul>
+                </nav>
+            </header>
+            <img class="logo-secondaire" src="logo.png" />
+        </header>
+        <div class="bloc_chiffres">
+        <p class="presentation">Découvrez les JO de Paris 2024</p>
+        <p class ="chiffres"><span id="nbr">28</span> DISCIPLINES </p>
+        <p class ="chiffres">329 EPREUVES</p>
+        <p class ="chiffres">10500 ATHLETES</p>
+        </div>
+        <p>Les Jeux Olympiques de Paris incarnent l'excellence sportive et la fraternité mondiale, 
+            réunissant des athlètes exceptionnels venus des quatre coins de la planète pour célébrer la diversité et l'esprit compétitif. La Ville Lumière se transforme en capital mondiale du sport, accueillant avec raffinement le monde entier dans un spectacle grandiose. Ces jeux marqueront une page inoubliable de l'histoire olympique,
+             alliant la richesse de la culture française à la splendeur des performances athlétiques internationales.</p>
+             <img class="presentation"src="seine.webp" alt="">
+        <script src="scripts/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+</html>
