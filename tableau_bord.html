@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Accueil</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+        <header>
+            <nav id="menu" class="">
+                <button onclick="showMenu()" class="">
+                    <span id="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+                <label class="labmenu">Menu</label>
+                <ul id="menu-list" class="offcanvas-body">
+                    <li class="list-group-item"><a href="index.html">Accueil <span>→</span></a></li>
+                    <li class="list-group-item">
+                        <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            Notre rôle <span>☰</span>
+                        </button>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                                <ul>
+                                    <li class="dropdown-item"><a href="#">Lorem Ipsum <span>→</span></a></li>
+                                    <li class="dropdown-item"><a href="#">Lorem Ipsum <span>→</span></a></li>
+                                    <li class="dropdown-item"><a href="#">Lorem Ipsum <span>→</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item"><span></span></li>
+                    <li class="list-group-item"><a href="questionnaire.html">Remplir le questionnaire <span>→</span></a></li>
+                    <li class="list-group-item"><a href="#">Se recenser <span>→</span></a></li>
+                    <li class="list-group-item"><a href="#">Les déplacements près de chez moi <span>→</span></a></li>
+                    <li class="list-group-item"><span></span></li>
+                    <li class="list-group-item"><a href="co_admin.html">Création de tableaux de bord <span>→</span></a></li>
+                </ul>
+            </nav>
+        </header>
+		
+		<div class = "bloc4"> Création du tableau de bord </div>
+		
+		<div class = "bloc5"> Vous êtes connecté en tant que : [...] </div>
+		
+		<div class = "bloc6"> 
+		
+		
+		
+		<ul class ="liste">
+		
+		<li class = "h2">Vous voulez créer un tableau de bord a partir du (des) questionnaire(s) concernant :</li> 
+		<li><input type='checkbox' >Les Communes</li>
+		<li><input type='checkbox' >Les entreprises/associations</li>
+		<li><input type='checkbox' >Les particuliers</li>
+		</ul>
+		
+		<ul class ="liste">
+		
+		<li class = "h2">Les données qui vous intéressent pour le tableau de bord sont : </li> 
+		<li><input type='checkbox' >Le public attendu</li>
+		<li><input type='checkbox' >Le nombre de personnes en situation de handicap</li>
+		<li><input type='checkbox' >Le nombre d'enfants et de personnes agées</li>
+		<li><input type='checkbox' >Les moyens de transport utilisés</li>
+		<li><input type='checkbox' >Les types de locations solicités</li>
+		</ul>
+		
+		<p class = "p1">Date(entre le 26 Juillet et le 11 Août)</p>
+		<input class = "date" type="text" placeholder = "Entrez une date"> 
+		
+		<p>Discipline</p>
+		<input class = "date" type="text" placeholder = "Entrez le nom de la discipline"> 
+		
+		<p>Epreuve</p>
+		<input class = "date" type="text" placeholder = "Entrez le nom de l'épreuve"> 
+		
+		</div>
+		<div class = "bloc6bis"> 
+		
+		Aperçu du tableau de bord 
+		
+		
+		</div>
+
+		
+	
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="scripts/script.js"></script>		
+    </body>
+</html>
