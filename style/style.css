@@ -1,18 +1,114 @@
-
 @font-face {
     font-family: "Paris2024";
     src: url(Paris2024-Variable.ttf);
 }
+.header-index{
+    background-color: white;
+    animation: deroulement 2s ease-in-out;
+    animation-fill-mode: forwards;
+    
+    box-shadow: 0px 0px 30px black;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
 
 body {
-    background-color: #575294;
-    color: white;
     font-family: "Paris2024";
-    display: flex;
+    background-color: #575294;
     background-repeat: no-repeat;
     background-size: cover;
+    color: Black;
 
 }
+@keyframes fadein {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@keyframes deroulement {
+    0% {
+        border-radius: 0em;
+        margin:0em;
+        
+    }
+    100% {
+        border-radius: 70% 20% / 50% 60%;
+        margin-top: 2em;
+        margin:2em;
+    }
+}
+    
+    
+.logo-centered{
+    min-width: 5%;
+    max-width: 30%;
+    margin: auto;
+    display: flex;
+    animation: slideinlogo 2s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.logo-secondaire{
+    min-width: 5%;
+    max-width: 20%;
+    margin: auto;
+    display: flex;
+}
+
+
+
+
+.carte {
+    min-width: 5%;
+    max-width: 30%;
+    filter: drop-shadow(0 0 0.75rem black);
+    
+   
+}
+
+@keyframes slideinlogo {
+    0% {
+        transition-delay: 2s;
+        min-width: 30%;
+        max-width: 60%;
+    }
+  
+    100% {
+        min-width: 15%;
+        max-width: 17.5%;
+    }
+}
+
+
+
+@keyframes slideintext {
+    0% {
+        font-size: 5em;
+        
+    }
+  
+    100% {
+        font-size: 3em;
+       
+    }
+  }
+   
+h1{
+    text-align: center ;
+    margin: 1em;
+    animation: slideintext 2s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    padding-bottom:1em;
+    
+
+} 
 
 .presentation{
     text-align: center ;
@@ -25,10 +121,23 @@ body {
     margin-right: auto;
     display: block;
 } 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+h2{
+    text-align: center ;
+    font-size: 3em;
+    margin: 1em;
+    color: white;
+    animation: fadein 2s ease-in-out;
+    animation-fill-mode: forwards;
+    
+}
+
+h3{
+    text-align: center ;
+    font-size: 3em;
+    margin: 1em;
+    color: white;
+    
 }
 
 #burger {
@@ -55,7 +164,7 @@ button {
     padding-block: 1px;
     padding-inline: 6px;
     border-width: 2px;
-    border-color: rgba(255, 255, 255, 0.699);
+    border-color: white;
     line-height:30px;
 }
 
@@ -67,6 +176,7 @@ button:hover>#burger>span{
     position: relative;
     font-size: 40px;
     z-index: 100;
+    color:white
 }
 
 #burger>span{
@@ -96,7 +206,7 @@ button:hover>#burger>span{
 
 #menu-list {
     display: block;
-    background-color: #0d0b27a8;
+    background-color: rgb(16,13,42);
     list-style: none;
     font-size: 40px;
     width: 50%;
@@ -110,8 +220,9 @@ button:hover>#burger>span{
     height: 100vh;
     z-index: 10;
     opacity: 1;
-    scrollbar-color: rgba(255, 255, 255, 0.603) transparent;
+    scrollbar-color: rgb(255, 255, 255, 0.603) transparent;
     scrollbar-width: thin;
+    opacity: 0.9;
 }
 
 #menu-list>li, #menu-list>span:not(:first-child) {
@@ -124,7 +235,7 @@ button:hover>#burger>span{
 }
 
 #menu-list::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.603);
+    background-color: rgb(255, 255, 255, 0.603);
 }
 
 #menu-list::-webkit-scrollbar-track {
@@ -187,28 +298,37 @@ p{
 	text-align : center;
 	color : white;
 	font-size : 200%;
-    margin: 2em;
+    margin:0.5em;
 
 }
 
+.chiffres{
+    font-size: 500%;
+}
 .bloc{
 	flex-direction: column;
 	margin-bottom: 30px;
 	margin-top: 10px;
 	margin-left: auto;
 	margin-right: auto;
-	height: 150px;
-	width: 55%;
+	height: auto;
+	min-height: 10lvh;
+    max-width: 50%;
 	font-size: 40px;
 	align-items: center;
 	justify-content: center;
 	display: flex;
-	text-align: center;
 	border-radius : 1em;
-	background-color: #5ac2f2;
-	color : black; 
+	background-color: white;
+	color : black;
+    padding:2lvh;
+    
 }
 
+
+input{
+    margin:2lvh;
+}
 .bloc2{
 	flex-direction: column;
 	margin-bottom: 10px;
@@ -224,14 +344,15 @@ p{
 	text-align: center;
 	color : black; 
 	background-color: white;
+ 
+    
 }
 .bloc3{
 	flex-direction: column;
-	margin-bottom: 10px;
-	margin-top: 10px;
-	margin-left: 30%;
-	height: 50px;
-	width: 40%;
+	margin-bottom: 10lvh;
+	height: auto;
+	min-height: 10lvh;
+    width: auto;
 	font-size: 40px;
 	align-items: center;
 	justify-content: center;
@@ -242,117 +363,31 @@ p{
 }
 
 .bloc:hover{
-    background-color: #46b5e8;
+    
+
 }
 
 .bloc:active {
     box-shadow:
-      inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px white,
       inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
-.header-index {
-    background-color: white;
-    height: 100%;
-    animation: deroulement 2s ease-in-out;
-    animation-fill-mode: forwards;
-    box-shadow: 0px 0px 30px black;
-    justify-content: space-between;
-    align-items: center;
-  
-}
-@keyframes fadein {
-    0% {
-        opacity:0;
-    }
-    100% {
-        opacity:1;
-    }
-}
-
-@keyframes deroulement {
-    0% {
-        border-radius: 0em;
-        margin:0em;
-    }
-    100% {
-        border-radius: 70% 20% / 50% 60%;
-        margin:2em;
-    }
-}
-    
-    
-.logo-centered {
-    min-width: 5%;
-    max-width: 30%;
+iframe{
+    width: 80%;
+    height: 80vh;
     margin: auto;
+    margin-bottom: 3em;
     display: flex;
-    animation: slideinlogo 2s ease-in-out;
-    animation-fill-mode: forwards;
-}
-
-.logo-top-right {
-    min-width: 5%;
-    max-width: 20%;
-    margin: auto;
-    display: flex;
-}
-.logo-secondaire{
-    min-width: 5%;
-    max-width: 20%;
-    margin: auto;
-    display: flex;
+    border-radius: 3em;
 }
 
 
-.carte {
-    min-width: 5%;
-    max-width: 30%;
-    filter: drop-shadow(0 0 0.75rem black);
-    
-   
+footer{
+    position:absolute;
+    bottom:0;  /* on le colle en bas */
+     width:100%;
+     text-align: center;
+     background-color: white;
+
 }
-
-@keyframes slideinlogo {
-    0% {
-        min-width: 15%;
-        max-width: 35%;
-    }
-  
-    100% {
-        min-width: 7.5%;
-        max-width: 17.5%;
-    }
-}
-
-
-
-@keyframes slideintext {
-    0% {
-        font-size: 5em;
-    }
-  
-    100% {
-        font-size: 3em;
-    }
-  }
-   
-h1{
-    text-align: center ;
-    margin: 1em;
-    animation: fadein 2s ease-in-out;
-    animation: slideintext 2s ease-in-out;
-    animation-fill-mode: forwards;
-    padding-bottom:1em;
-
-} 
-
-h2{
-    text-align: center ;
-    font-size: 3em;
-    margin: 1em;
-    color: white;
-    animation: fadein 2s ease-in-out;
-    animation-fill-mode: forwards;
-}
-
