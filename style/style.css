@@ -452,3 +452,7 @@ p{
     border-radius: 70% 20% / 50% 60%;
     box-shadow: 0px 0px 30px #6760ab;
 }
+.image_eco{
+	 border-radius: 20% / 10%;
+	 width: 25%;
+}
