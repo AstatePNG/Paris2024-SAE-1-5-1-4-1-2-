@@ -13,7 +13,6 @@
     
 }
 
-
 body {
     font-family: "Paris2024";
     background-color: #575294;
@@ -43,7 +42,20 @@ body {
         margin:2em;
     }
 }
-    
+
+@keyframes deroulement-paragraphe {
+    0% {
+        border-radius: 0em;
+        margin:3em;
+        
+    }
+    100% {
+        border-radius: 70% 20% / 50% 60%;
+        margin-top: 5em;
+        margin-bottom: 5em;
+        margin:2em;
+    }
+}
     
 .logo-centered{
     min-width: 5%;
@@ -122,6 +134,16 @@ body {
     display: block;
 } 
 
+h1 {
+    margin: 0px 15em;
+    padding: 1em;
+    border-radius: 70% 20% / 50% 60%;
+    color: azure;
+    text-align: center;
+    top: 5em;
+    border: solid 1px;
+}
+
 h2{
     text-align: center ;
     font-size: 3em;
@@ -132,15 +154,16 @@ h2{
     
 }
 
+.titre-parag {
+    font-size: 2em;
+}
+
 h3{
     text-align: center ;
     font-size: 3em;
     margin: 1em;
-    color: white;
-    
+    color: white;   
 }
-
-/*Début du css du menu réalisé par Elsa Hamon*/
 
 #burger {
     position: sticky;
@@ -174,11 +197,13 @@ button:hover>#burger>span{
     margin: 12px;
 }
 
-.labmenu {
+#labmenu {
     position: relative;
     font-size: 40px;
     z-index: 100;
-    color:white
+    color:white;
+    opacity: 1;
+    transition: 0.5s;
 }
 
 #burger>span{
@@ -217,14 +242,15 @@ button:hover>#burger>span{
     left: -150%;
     transition: .5s;
     line-height: 1.15;
-    padding: 5em 2em 1em;
+    padding: 5em 2em 5em;
     margin: 0;
     height: 100vh;
     z-index: 10;
     opacity: 1;
-    scrollbar-color: rgb(255, 255, 255, 0.603) transparent;
+    scrollbar-color: rgb(255, 255, 255, 0.37) transparent;
     scrollbar-width: thin;
     opacity: 0.9;
+    border-bottom-right-radius: 20%;
 }
 
 #menu-list>li, #menu-list>span:not(:first-child) {
@@ -237,13 +263,17 @@ button:hover>#burger>span{
 }
 
 #menu-list::-webkit-scrollbar-thumb {
-    background-color: rgb(255, 255, 255, 0.603);
+    background-color: rgba(255, 255, 255, 0.37);
 }
 
 #menu-list::-webkit-scrollbar-track {
     background-color: transparent;
 }
 
+#labmenu.open {
+    opacity: 0;
+    transition: 0.5s;
+}
 
 li>a {
     text-decoration: none;
@@ -290,21 +320,15 @@ li>button.btn {
     text-align: left;
 }
 
-.card-body {
-    margin: 0px;
-    background-color: transparent;
-    border: none;
+.collapse, .card, .card-body {
+    border-radius: 0;
+    background-color: rgb(16,13,42);
 }
 
-p{
-	text-align : center;
-	color : white;
-	font-size : 200%;
-    margin:0.5em;
 
+.dropdown-item {
+    margin-top: 1em;
 }
-
-/*Fin du css du menu réalisé par Elsa Hamon*/
 
 .chiffres{
     font-size: 500%;
@@ -366,10 +390,6 @@ input{
 
 }
 
-.bloc:hover{
-    
-
-}
 
 .bloc:active {
     box-shadow:
@@ -398,7 +418,7 @@ footer {
 
 /*div co-réaliser par Mika Phan et Elsa Hamon*/
 
-div{
+.bloc-texte {
     background-color: #6760ab;
     display: list-item;
     list-style: none;
@@ -409,24 +429,29 @@ div{
     text-align: center;
 }
 
+
 p{
+	text-align : center;
+	color : white;
+	font-size : 16px;
+    margin:0.5em;
     opacity: 1;
-    font-size:large;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 /*Affichage des paragraphes d'information réaliser par Elsa Hamon*/
 
 .text-illu {
-    animation: deroulement 2s ease-in-out;
+    animation: deroulement-paragraphe 2s ease-in-out;
     animation-fill-mode: forwards;
     border-radius: 70% 20% / 50% 60%;
     background-color: #ada7e6;
     display: flex;
     left: 0px;
     padding: 0px;
-    margin: 0px;
     z-index: 10;
+    margin-top: 5em;
+    margin-bottom: 5em;
 }
 
 .paragraphe {
@@ -451,8 +476,4 @@ p{
     width: 50%;
     border-radius: 70% 20% / 50% 60%;
     box-shadow: 0px 0px 30px #6760ab;
-}
-.image_eco{
-	 border-radius: 20% / 10%;
-	 width: 25%;
 }
