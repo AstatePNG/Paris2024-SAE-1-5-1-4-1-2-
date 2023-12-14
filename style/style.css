@@ -383,11 +383,10 @@ iframe{
 }
 
 
-footer{
-    position:flex;
-    bottom:0;  /* on le colle en bas */
-     width:100%;
-     text-align: center;
-     background-color: white;
-
-}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    z-index: 1000; 
