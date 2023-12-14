@@ -140,6 +140,8 @@ h3{
     
 }
 
+/*Début du css du menu réalisé par Elsa Hamon*/
+
 #burger {
     position: sticky;
 }
@@ -302,6 +304,8 @@ p{
 
 }
 
+/*Fin du css du menu réalisé par Elsa Hamon*/
+
 .chiffres{
     font-size: 500%;
 }
@@ -389,5 +393,62 @@ footer {
     width: 100%;
     text-align: center;
     background-color: white;
-    z-index: 1000;
+    z-index: 1000; 
+}
+
+/*div co-réaliser par Mika Phan et Elsa Hamon*/
+
+div{
+    background-color: #6760ab;
+    display: list-item;
+    list-style: none;
+    margin-bottom: 10%;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding-top: 10px;
+    text-align: center;
+}
+
+p{
+    opacity: 1;
+    font-size:large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Affichage des paragraphes d'information réaliser par Elsa Hamon*/
+
+.text-illu {
+    animation: deroulement 2s ease-in-out;
+    animation-fill-mode: forwards;
+    border-radius: 70% 20% / 50% 60%;
+    background-color: #ada7e6;
+    display: flex;
+    left: 0px;
+    padding: 0px;
+    margin: 0px;
+    z-index: 10;
+}
+
+.paragraphe {
+    border-radius: 70% 20% / 50% 60%;
+    background-color: #6760ab;
+    display: list-item;
+    list-style: none;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding: 5em;
+    text-align: center;
+    opacity: 0.70;
+    z-index: 50;
+    box-shadow: 0px 0px 30px #494286;
+}
+
+.illu-text {
+    margin-top: 10em;
+    margin-left: 5em;
+    height: fit-content;
+    width: 50%;
+    border-radius: 70% 20% / 50% 60%;
+    box-shadow: 0px 0px 30px #6760ab;
 }
