@@ -165,8 +165,11 @@ h3{
     color: white;   
 }
 
-#burger {
+.burger {
     position: sticky;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 button {
@@ -174,7 +177,7 @@ button {
     position: relative;
     overflow: hidden;
     width: 5em;
-    z-index: 50;
+    z-index: 1220;
     padding: 0;
     cursor: pointer;
     border-radius: 50%;
@@ -198,7 +201,9 @@ button:hover>#burger>span{
 }
 
 #labmenu {
-    position: relative;
+    position: fixed;
+    top: 1em;
+    left: 3em;
     font-size: 40px;
     z-index: 100;
     color:white;
@@ -242,10 +247,10 @@ button:hover>#burger>span{
     left: -150%;
     transition: .5s;
     line-height: 1.15;
-    padding: 5em 2em 5em;
+    padding: 3em 2em 3em 4em;
     margin: 0;
     height: 100vh;
-    z-index: 10;
+    z-index: 1200;
     opacity: 1;
     scrollbar-color: rgb(255, 255, 255, 0.37) transparent;
     scrollbar-width: thin;
